@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <style>
+        pre {
+            display: block;
+            unicode-bidi: embed;
+            font-family: monospace;
+            white-space: pre;
+            background-color: rgb(194, 194, 194);
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
     <h3>NEERAZSAI VEERANKI</h3>
 
-    <p>I'm a travel enthusiast who loves to go on a very long road trips, eespecially on motorcycles. I recently got this interest after seeing, people travelling places around the world. my dream is to explore an unexplored place and its beauty on motorcycle. Ofcourse its a very stressfull and energy consuming thing to drive for that long periods of time, but i believe with a right company of friends it would be a life time memory to cherish.</p>
-    
+    <p>I'm a travel enthusiast who loves to go on a very long road trips, eespecially on motorcycles. I recently got
+        this interest after seeing, people travelling places around the world. my dream is to explore an unexplored
+        place and its beauty on motorcycle. Ofcourse its a very stressfull and energy consuming thing to drive for that
+        long periods of time, but i believe with a right company of friends it would be a life time memory to cherish.
+    </p>
+
     <h2>Harry Potter</h2>
 
-    <p>One of the main reasons that the series has become so loved is it's attention to detail and the costumes, clothing choices and descriptions of the characters. Think Harry's lightening-shaped scar, his broken glasses and his "mother's eyes"</p>
+    <p>One of the main reasons that the series has become so loved is it's attention to detail and the costumes,
+        clothing choices and descriptions of the characters. Think Harry's lightening-shaped scar, his broken glasses
+        and his "mother's eyes"</p>
 
     <img src="images/harry.jpg" alt="Harry Potter">
 
@@ -22,7 +40,8 @@
 
     <h2>Places I would suggest you to visit</h2>
 
-    <p>Here the following table has the data of places that are worth of exploring, its city and amount of time you can spend on exploring it.</p>
+    <p>Here the following table has the data of places that are worth of exploring, its city and amount of time you can
+        spend on exploring it.</p>
 
     <table border="1">
         <tr>
@@ -51,5 +70,37 @@
             <td>1 day</td>
         </tr>
     </table>
+
+    <hr>
+
+    <h3>CODE SNIPPET - WORDPRESS</h3>
+
+    <blockquote>
+        Get a List of Custom Field Values limited by post category - <a href="https://stackoverflow.com/questions/58026099/get-a-list-of-custom-field-values-limited-by-post-category"><i>stackoverflow.com</i></a>
+    </blockquote>
+
+    <pre>
+    <h3>All Post Meta</h3>
+    
+    &lt;?php 
+            
+    // Get all the data 
+    $getPostCustom = get_post_custom(); 
+            
+    foreach($getPostCustom as $name=>$value) {
+            
+    echo "&lt;strong&gt;" . $name . "&lt;/strong&gt;"."  =>  ";
+            
+    foreach ($value as $nameAr=>$valueAr) {
+        echo "&lt;br /&gt;";
+        echo $nameAr."  =>  ";
+        echo var_dump($valueAr);
+    }
+            
+    echo "&lt;br /&gt;&lt;br /&gt;";
+            
+    }?&gt;
+    </pre>
 </body>
+
 </html>
